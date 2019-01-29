@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<h2>Регистрация</h2>
+{% if error %}
+<h4>{{ error }}</h4>
+{% endif %}
+<form action="{% url 'account:registration' %}" method="post">
+  {% csrf_token %}
+  <p><input type="text" name="username" placeholder="Имя пользователя"></p>
+  <p><input type="email" name="e-mail" placeholder="E-mail"></p>
+  <p><input type="password" name="password" placeholder="Пароль"></p>
+  <p><input type="password" name="password-confirm" placeholder="Введите пароль еще раз"></p>
+  <input type="submit" class="btn btn-primary" value="Зарегистрироваться">
+</form>
+
+{% endblock %}

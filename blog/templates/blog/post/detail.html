@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+ <h1>{{ post.title }}</h1>
+ <p>{{ post.body|safe|linebreaks }}</p>
+ <hr>
+ <h3>Комментарии:</h3>
+ <form class="" action="{% url 'blog:add_comment' post.id %}" method="post">
+   {% csrf_token %}
+   {{ form.as_p }}
+   <input type="submit" class="btn btn-warning" name="" value="Add comment">
+ </form>
+  {% if comments %}
+  {% for comment in comments %}
+    <hr>
+    <p>{{ comment.author }}. {{ comment.created }}</p>
+    <p>{{ comment.body }}</p>
+  {% endfor %}
+  {% endif %}
+{% endblock %}

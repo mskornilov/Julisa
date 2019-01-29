@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% load embed_video_tags %}
+{% block content %}
+
+<h1>{{ course.title }}</h1>
+{% for module in course.modules.all %}
+<h2>{{ module.title }}</h2>
+<p>{{ module.description }}</p>
+{% for item in module.items.all %}
+<h3>{{ item.title }}</h3>
+{% if item.text %}
+<p>{{ item.text }}</p>
+{% endif %}
+{% if item.file %}
+<p class="text-muted">{{ item.file }}</p>
+<p><a class="btn btn-primary" href="{{ item.file.url }}">Загрузить файл</a></p>
+{% endif %}
+{% if item.video %}
+{% video item.video "small" %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endblock %}

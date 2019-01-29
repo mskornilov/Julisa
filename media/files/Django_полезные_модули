@@ -1,0 +1,2 @@
+django-ckeditor: для добавления картинок в пост и форматирования текста
+cjango-crispy-forms: для интеграции bootstrap в django-формы.

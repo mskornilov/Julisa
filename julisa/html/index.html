@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="julisa.css">
+  </head>
+  <body>
+    <div class="top-menu">
+        <i class="top-menu-icon fab fa-instagram fa-2x"></i>
+        <i class="top-menu-icon fab fa-vk fa-2x"></i>
+        <div class="top-menu-slogan">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <span class="top-menu-option">Главная</span>
+        <span class="top-menu-option">Регистрация</span>
+        <span class="top-menu-option">Вход</span>
+        <i class="top-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <hr>
+
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <img class="logo" src="{% static 'blog/images/Logo.jpg' %}" alt="">
+        <!-- <span class="navbar-option">0-1,5 года</span>
+        <span class="navbar-option">1,5-3 года</span>
+        <span class="navbar-option">Билингвизм</span>
+        <span class="navbar-option">Мамины заметки</span> -->
+        <div class="dropdown">
+         <button class="dropbtn">0-1,5 года <i class="fas fa-caret-down"></i></button>
+         <div class="dropdown-content">
+           <a href="#">Library</a>
+           <a href="#">Toys</a>
+           <a href="#">Multimedia</a>
+         </div>
+        </div>
+        <div class="dropdown">
+         <button class="dropbtn">1,5-3 года <i class="fas fa-caret-down"></i></button>
+         <div class="dropdown-content">
+           <a href="#">Library</a>
+           <a href="#">Toys</a>
+           <a href="#">С чего начать</a>
+           <a href="#">Multimedia</a>
+         </div>
+        </div>
+        <span class="navbar-option">Билингвизм</span>
+        <div class="dropdown">
+         <button class="dropbtn">Мамины заметки <i class="fas fa-caret-down"></i></button>
+         <div class="dropdown-content">
+           <a href="#">Точка зрения</a>
+           <a href="#">Полезные online-ресурсы</a>
+           <a href="#">Алиса: дневник речевого развития</a>
+         </div>
+        </div>
+      </div>
+    <div class="shop-button-wrapper">
+        <div class="shop-button-container">
+          <div class="shop-button">SHOP</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>FAQ</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2 text-center">
+          Как распределить время?
+        </div>
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2">
+          С чего начать?
+        </div>
+      </div>
+      <div class="row">
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2">
+          Что такое билингвизм и полезен ли он?
+        </div>
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2">
+          Как распределить время?
+        </div>
+      </div>
+      <div class="row">
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2">
+          Как распределить время?
+        </div>
+        <div class="faq-entry col-lg-6 col-12 mx-auto mt-2">
+          Как распределить время?
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <h2>Последние статьи</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="last-article col-lg-4 col-12 text-center">
+          <img class="last-article-image img-fluid m-0" src="{% static 'blog/images/confused-kid.jpg' %}" alt="">
+          <h4>Название статьи</h4>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="last-article col-lg-4 col-12 text-center">
+          <img class="last-article-image img-fluid m-0" src="{% static 'blog/images/random-kid.jpg' %}" alt="">
+          <h4>Название статьи</h4>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="last-article col-lg-4 col-12 text-center">
+          <img class="last-article-image img-fluid m-0" src="{% static 'blog/images/random-kid2.jpg' %}" alt="">
+          <h4>Название статьи</h4>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- <div class="faq-container">
+      <div class="faq-entry">
+        Как распределить время?
+      </div>
+      <div class="faq-entry">
+        С чего начать?
+      </div>
+    </div>
+    <div class="faq-container">
+
+      <div class="faq-entry">
+        Что такое билингвизм и полезен ли он?
+      </div>
+      <div class="faq-entry">
+        Как распределить время?
+      </div>
+    </div>
+    <div class="faq-container">
+      <div class="faq-entry">
+        Как распределить время?
+      </div>
+    </div> -->
+
+  </body>
+</html>
